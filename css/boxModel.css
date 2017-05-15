@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+}
+
+div {
+  background-color: red;
+  /* Step one */
+  /*border: 10px solid blue;
+  padding: 10px;
+  width: 200px;
+  margin: 10px auto;*/
+  /* Step two */
+  /*display: inline-block;*/
+  /* Step three */
+  /*box-sizing: border-box;*/
+}
+
+/* Step four */
+/*#divOne {
+  background-color: yellow;
+}
+
+.divs-group-1 {
+  background-color: green;
+}*/
+
+/* Step five */
+/*.divs-group-2:not(:last-child) {
+  background-color: cyan;
+}
+
+.divs-group-2:nth-child(2n) {
+  background-color: green;
+}*/
