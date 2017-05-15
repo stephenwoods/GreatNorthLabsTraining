@@ -39,3 +39,7 @@ img {
   display: block;
   width: 100%;
 }
+
+ul {
+  text-align: left;
+}
