@@ -2,27 +2,35 @@
 <html lang="en">
   <head>
     <title>Doge</title>
+    <link type="text/css" href="/css/bootstrap.min.css" rel="stylesheet">
     <link type="text/css" href="/css/index.css" rel="stylesheet">
     <!-- Contains info about the document, as well as external files to load before rendering the HTML (e.g CSS). -->
   </head>
   <body>
     <div id="container">
       <h1>The Coolest Dog</h1>
-      <div id="dogContainer">
-        <a href="https://i.imgflip.com/md3m6.jpg">
-          <img src="https://i.imgflip.com/md3m6.jpg" />
-        </a>
-        <p>Dogs are so cool. Please tell me the name of your favorite dog!</p>
+      <div id="row">
+        <div class="col-md-6">
+          <a href="https://i.imgflip.com/md3m6.jpg">
+            <img id="doge" class="img-rounded img-responsive" src="https://i.imgflip.com/md3m6.jpg" />
+          </a>
+          <p>Dogs are so cool. Please tell me the name of your favorite dog!</p>
+        </div>
+        <div class="col-md-6">
+          <form id="nameForm" action="/thisDoesNotExist">
+            <div class="form-group">
+              <label for="nameInput">Favorite dog name:</label>
+              <input class="form-control" type="text" placeholder="Type a name..." name="nameInput">
+            </div>
+            <input class="form-control btn btn-primary" type="submit" value="Add Dog Name">
+          </form>
+          <ul id="dogNames">
+          </ul>
+        </div>
       </div>
-      <form id="nameForm" action="/thisDoesNotExist">
-        <label for="nameInput">Favorite dog name:</label>
-        <input class="form-control" type="text" placeholder="Type a name..." name="nameInput">
-        <input class="form-control" type="submit" value="Add Dog Name">
-      </form>
-      <ul id="dogNames">
-      </ul>
     </div>
     <script type="text/javascript" src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
     <script type="text/javascript" src="/js/funWithJavaScript.js"></script>
   </body>

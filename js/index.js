@@ -21,7 +21,8 @@
 // })();
 
 $(document).ready(function() {
-  $('#nameForm').onClick(function(e) {
+  console.log($('#nameForm'));
+  $('#nameForm').submit(function(e) {
     e.preventDefault();
     $('#dogNames').append('<li>' + escape(e.currentTarget.nameInput.value) + '</li>');
     e.currentTarget.nameInput.value = '';
