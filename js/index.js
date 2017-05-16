@@ -23,7 +23,7 @@
 $(document).ready(function() {
   $('#nameForm').onClick(function(e) {
     e.preventDefault();
-    $('#dogNames').append('<li>' + e.currentTarget.nameInput.value + '</li>');
+    $('#dogNames').append('<li>' + escape(e.currentTarget.nameInput.value) + '</li>');
     e.currentTarget.nameInput.value = '';
   });
 });
